@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/index.css">
+</head>
+<body>
+  <div class="container">
+    <form class="cmxform" id="commentForm" method="get" action="">
+        <fieldset>
+          <legend>Please provide your name, email address (won't be published) and a comment</legend>
+          <p class="input">
+            <label>Name*</label>
+            <input id="cname" name="name" minlength="2" type="text" placeholder="Name(at least 2 character)">
+          </p>
+          <p>
+            <label>E-Mail*</label>
+            <input id="cemail" type="email" name="email" required >
+          </p>
+          <p>
+            <label>Phone number*</label>
+            <input id="number" type="text" name="phoneNumber" >
+          </p>
+          <p>
+            <label>Date (DD-MM-YYY)*</label>
+            <input id="date" type="date" name="birthday" value="" >
+          </p>
+          <p>
+            <label>Password*</label>
+            <input id="password" type="password" name="password" value="" placeholder="Min length is 10 character">
+          </p>
+          <p>
+            <label>Retype PassWord*</label>
+            <input id="re_password" type="password" name="re_password" value="">
+          </p>
+          
+          <p class="hobby">
+            <div class="choose">
+              <legend>Hobby:</legend>
+                <div class="swimming"><input type="checkbox" id="swimming" value="simming" name="topic">Swimming</div>
+                <div class="clambing"><input type="checkbox" id="topic_marketflash" value="marketflash" name="topic">Climbing</div>
+                <div class="clambing"><input type="checkbox" id="running" value="running" name="topic">Running</div>
+                <div class="clambing"><input type="checkbox" id="playgame" value="playgame" name="topic">Playgame</div>
+            </div>
+              <div class="note"><label for="topic" class="error erorr_hobby">Please select at least two topics you'd like to receive.</label></div>
+          </p>
+
+          <div class="Sexual">
+            <div class="choose">
+              <legend>Sexual:</legend>
+                <div class="swimming"><input type="radio" id="swimming" value="simming" name="topic1">Male</div>
+                <div class="clambing"><input type="radio" id="topic_marketflash" value="marketflash" name="topic1">Female</div>
+            </div>
+              <div class="note"><label for="topic1" class="error erorr_hobby1">Please select at least two topics you'd like to receive.</label></div>
+          </div>
+          <!-- <p>
+            <label for="male" name="sexual"> Sexual </label>
+              <input type="checkbox" id="Male" value="male" name="topic1">Male                     
+              <input type="checkbox" id="female" value="female" name="topic1">Female
+          </p> -->
+          <p class="commnt">
+            <label>Your Comment</label>
+            <textarea id="ccomment" type="comment" name="comment" required placeholder="Your comment!"></textarea>
+          </p>
+
+          <p>
+            <button class="submit" type="submit" value="Submit">Submit</button>
+          </p>
+        </fieldset>
+      </form>
+  </div>
+    <script src="./asset/jquery/jquery-3.6.1.js"></script>
+    <script src="./asset/jquery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./asset/index.js"></script>
+    
+</body>
+</html>

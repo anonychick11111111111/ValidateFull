@@ -34,7 +34,6 @@ input[type=text], input[type=password],input[type=email], textarea[type=comment]
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus {
   margin-bottom: 0;
 }
-   
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
@@ -138,4 +137,8 @@ fieldset > .hobby {
 }
 .commnt {
   margin-top: 50px;
+}
+
+.swim {
+  color: black;
 }

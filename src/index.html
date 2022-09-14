@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./asset/index.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
 </head>
 <body>
   <div class="container">
@@ -20,10 +20,12 @@
             <label>E-Mail*</label>
             <input id="cemail" type="email" name="email" required >
           </p>
-          <p>
-            <label>Phone number*</label>
-            <input id="number" type="text" name="phoneNumber" >
-          </p>
+          <div class="form-group">
+            <p>
+              <label>Phone number*</label>
+              <input id="phone_number" type="text" name="phoneNumber" >
+            </p>
+          </div>
           <p>
             <label>Date (DD-MM-YYY)*</label>
             <input id="date" type="date" name="birthday" value="" >
@@ -35,8 +37,7 @@
           <p>
             <label>Retype PassWord*</label>
             <input id="re_password" type="password" name="re_password" value="">
-          </p>
-          
+          </p>         
           <p class="hobby">
             <div class="choose">
               <legend>Hobby:</legend>
@@ -56,11 +57,6 @@
             </div>
               <div class="note"><label for="topic1" class="error erorr_hobby1">Please select at least two topics you'd like to receive.</label></div>
           </div>
-          <!-- <p>
-            <label for="male" name="sexual"> Sexual </label>
-              <input type="checkbox" id="Male" value="male" name="topic1">Male                     
-              <input type="checkbox" id="female" value="female" name="topic1">Female
-          </p> -->
           <p class="commnt">
             <label>Your Comment</label>
             <textarea id="ccomment" type="comment" name="comment" required placeholder="Your comment!"></textarea>
@@ -72,9 +68,8 @@
         </fieldset>
       </form>
   </div>
-    <script src="./asset/jquery/jquery-3.6.1.js"></script>
-    <script src="./asset/jquery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="./asset/index.js"></script>
-    
+  <script src="./asset/jquery/jquery-3.6.1.js"></script>
+  <script src="./asset/jquery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="./asset/jquery/index.js"></script>   
 </body>
 </html>

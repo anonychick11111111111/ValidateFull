@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('./font');
  * {box-sizing: border-box}
  body{
-    font-family: 'Noto Sans JP', sans-serif;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
  }
  .container {
   width: 80%;
@@ -23,20 +23,21 @@
   justify-content: left;
  }
 input[type=text], input[type=password],input[type=email], textarea[type=comment], input[type=date] {
-    padding: 15px; 
-    display: block;
-    width:100%;
-    resize: vertical;
-    border-radius:15px;
-    border: 1px solid black;
-    margin: 0 auto;
-    /* margin-top: 50px; */
+  padding: 15px; 
+  display: block;
+  width:100%;
+  resize: vertical;
+  border-radius:15px;
+  border: 1px solid black;
+  margin: 0 auto;   /* margin-top: 50px; */
  }
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus {
+  margin-bottom: 0;
+}
    
 hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
  }
 button {
   background-color: #4CAF50;
@@ -52,11 +53,11 @@ button {
   border-radius:15px;
  }
 button:hover {
-    opacity:1;
+  opacity:1;
  }
 .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+  padding: 14px 20px;
+  background-color: #f44336;
  }
 .signupbtn {
   float: left;

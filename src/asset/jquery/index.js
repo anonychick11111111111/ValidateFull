@@ -80,8 +80,7 @@ $(function() {
         minlength: 1
       }
     },
-    submitHandler: function(form) {
-      alert('click đăng kí')
+    submitHandler: function(form) { 
       $(form).submit();
     },
   });  
